@@ -7,10 +7,8 @@ import Register from "../Register/Register";
 import Administrator from "../Administrator/Administrator";
 import ProjectDetails from "../../components/ProjectDetails/ProjectDetails";
 import Transactions from "../../components/Transactions/Transactions";
-// import Appforgag from "../../components/Movie/MovieInformation/Appforgag";
-// import loginContext from "../../Contexts/loginContext";
+import Welcome from "../../components/Transactions/Welcome";
 const Main = (props) => {
-  // const { state, dispatch } = useContext(loginContext);
 
   return (
     <>
@@ -18,7 +16,7 @@ const Main = (props) => {
         <Route path="/" exact element={<Home />} />
         <Route path="/Administrator" exact element={<Administrator />} />
         <Route path="/AddNewProject" element={<AddNewProject />} />
-        <Route path="/Transactions" element={<Transactions />} />
+        <Route path="/Transactions" element={<Welcome />} />
         <Route
           path="/Login"
           element={<Login triggerLoginStatus={props.triggerLoginStatus} />}
@@ -26,9 +24,6 @@ const Main = (props) => {
         <Route path="/Register" element={<Register />} />
         <Route exact path="/ProjectDetails/:id" element={<ProjectDetails />} />
         <Route exact path="/AddNewProject/:id" element={<AddNewProject />} />
-        {/* <Route path="/:id" render={(props) => <Appforgag {...props} />} /> */}
-        {/* <Route path="" exact element={Home} /> */}
-        {/* <Route path="*" render={(props) => <Register {...props} />} /> */}
       </Routes>
     </>
   );

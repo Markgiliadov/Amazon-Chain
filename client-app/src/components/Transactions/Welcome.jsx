@@ -163,21 +163,6 @@ const Welcome = () => {
               </button>
             )}
           </div>
-          <button
-            type="button"
-            onClick={async () => {
-              // cropAmount();
-              reimburse();
-              // const contract = createEthereumContract();
-              // // const availableTransactions = await contract.getAllTransactions();
-              // console.log(availableTransactions);
-              // const count = await contract.getTransactionCount();
-              // console.log("COPUNT: " + count);
-            }}
-            className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-          >
-            Test Transaction Amount
-          </button>
         </div>
       </div>
     </div>
