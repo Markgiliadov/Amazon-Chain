@@ -6,7 +6,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Administrator from "../Administrator/Administrator";
 import ProjectDetails from "../../components/ProjectDetails/ProjectDetails";
-
+import Transactions from "../../components/Transactions/Transactions";
 // import Appforgag from "../../components/Movie/MovieInformation/Appforgag";
 // import loginContext from "../../Contexts/loginContext";
 const Main = (props) => {
@@ -18,6 +18,7 @@ const Main = (props) => {
         <Route path="/" exact element={<Home />} />
         <Route path="/Administrator" exact element={<Administrator />} />
         <Route path="/AddNewProject" element={<AddNewProject />} />
+        <Route path="/Transactions" element={<Transactions />} />
         <Route
           path="/Login"
           element={<Login triggerLoginStatus={props.triggerLoginStatus} />}

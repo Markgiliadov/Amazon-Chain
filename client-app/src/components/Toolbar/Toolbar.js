@@ -31,7 +31,14 @@ const Toolbar = (props) => {
         {props.loginStatus ? (
           <span className={classes.text}>Hello {props.loginAuth}</span>
         ) : null}
-
+        <NavLink
+          className={classes.button1}
+          // exact
+          // activeStyle={{ backgroundColor: "red" }}
+          to={{ pathname: "/Transactions" }}
+        >
+          Transactions
+        </NavLink>
         <NavLink
           className={classes.button1}
           // exact
@@ -46,7 +53,7 @@ const Toolbar = (props) => {
           // activeStyle={{ backgroundColor: "red" }}
           to={{ pathname: "/AddNewProject" }}
         >
-          Add new project
+          Add new product
         </NavLink>
         {!props.loginStatus ? (
           <>
