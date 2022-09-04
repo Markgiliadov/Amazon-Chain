@@ -57,6 +57,7 @@ contract CropContract{
         require(msg.value == valTransfered, "Must give at least: thirdStagePercentage");
         _transitionTo(State.T_STAGE);
         borrower.transfer(amount);
+        payable(borrower).transfer(address(this).balance);
     }
 
     function _transitionTo(State to) internal{
